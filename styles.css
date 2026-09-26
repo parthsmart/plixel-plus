@@ -18,5 +18,10 @@ button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
 main { width: min(1200px, calc(100% - 48px)); min-height: 42vh; margin: 0 auto; padding: 32px 0 70px; }
 #status { min-height: 1.5rem; margin: 0 0 24px; color: var(--muted); }
 #results { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+.card { overflow: hidden; border: 1px solid var(--border); border-radius: 14px; background: #201e2d; box-shadow: 0 10px 24px rgba(0, 0, 0, 0.17); transition: transform 180ms ease, border-color 180ms ease; }
+.card:hover { border-color: rgba(240, 93, 185, 0.7); transform: translateY(-4px); }
+.card a { display: block; color: inherit; text-decoration: none; }
+.card img { display: block; width: 100%; aspect-ratio: 4 / 3; background: #2b2939; object-fit: cover; }
+.card p { overflow: hidden; margin: 0; padding: 13px 14px 15px; font-size: 0.9rem; font-weight: 650; text-overflow: ellipsis; white-space: nowrap; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 @media (max-width: 560px) { .hero { min-height: 52vh; padding-bottom: 50px; } .hero-content { margin-top: 80px; text-align: left; } .intro { margin-left: 0; } #search-form { align-items: stretch; } #search-input { padding-left: 9px; font-size: 0.9rem; } button { padding: 12px 14px; } }
