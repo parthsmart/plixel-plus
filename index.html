@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SightSpark image discovery" />
+  <title>SightSpark | Image Discovery</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1>Pixel-Pulse</h1>
-    <h1>Aditya Branch</h1>
+  <header class="hero">
+    <a class="brand" href="/" aria-label="SightSpark home">Sight<span>Spark</span></a>
+    <div class="hero-content">
+      <p class="eyebrow">Discover the visual world</p>
+      <h1>Find images that spark your next idea.</h1>
+      <p class="intro">Search a topic to explore a growing collection of inspiring images.</p>
+      <form id="search-form" role="search">
+        <label class="sr-only" for="search-input">Search images</label>
+        <input id="search-input" name="query" type="search" placeholder="Try “mountains”, “cats”, or “architecture”" autocomplete="off" />
+        <button type="submit">Search <span aria-hidden="true">→</span></button>
+      </form>
+    </div>
+  </header>
+  <main>
+    <p id="status" role="status" aria-live="polite">Choose a topic and start exploring.</p>
+    <section id="results" aria-label="Image search results"></section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
